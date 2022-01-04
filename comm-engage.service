@@ -1,0 +1,17 @@
+[Unit]
+Description=Vrutti Community Engagement Data Warehouse
+After=postgresql@12-main.service
+
+[Service]
+User=root
+
+WorkingDirectory=/root/source/comm-engage-service
+ExecStart=/root/source/comm-engage-service/start-comm-engage.sh
+
+SuccessExitStatus=143
+TimeoutStopSec=10
+Restart=on-failure
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
