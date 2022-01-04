@@ -24,7 +24,7 @@ export MAPMYINDIA_AUTH_TOKEN=${MAPMYINDIA_AUTH_TOKEN}
 export COMMENGAGE_QRD_CRON=\"0 0 6 * * ?\"
 export QRD_API_BASE_URL=https://pmt.qrd.by
 export MAPMYINDIA_API_BASE_URL=https://apis.mapmyindia.com
-/usr/lib/jvm/java-17-openjdk-amd64/bin/java --enable-preview -jar integrator-0.0.1-SNAPSHOT.jar" > ${START_COMM_ENGAGE}
+/usr/lib/jvm/java-17-openjdk-amd64/bin/java --enable-preview -jar server-0.0.1-SNAPSHOT.jar" > ${START_COMM_ENGAGE}
 chmod 755 ${START_COMM_ENGAGE}
 echo "Generated ${START_COMM_ENGAGE} ..."
 
