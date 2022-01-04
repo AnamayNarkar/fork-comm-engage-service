@@ -2,8 +2,6 @@
 # Generated files: start-comm-engage.sh
 set -e
 
-if [[ $(id -u) -ne 0 ]] ; then echo "root/sudo privileges required" ; exit 1 ; fi
-
 START_COMM_ENGAGE=./start-comm-engage.sh
 SERVICE=comm-engage.service
 
