@@ -13,8 +13,13 @@ create_dirs() {
 
 create_dirs
 
-read -p "QRD_AUTH_TOKEN=" QRD_AUTH_TOKEN
-read -p "MAPMYINDIA_AUTH_TOKEN=" MAPMYINDIA_AUTH_TOKEN
+echo -n "QRD_AUTH_TOKEN="
+read -s QRD_AUTH_TOKEN
+echo
+
+echo -n "MAPMYINDIA_AUTH_TOKEN="
+read -s MAPMYINDIA_AUTH_TOKEN
+echo
 
 echo "#!/bin/bash
 export QRD_AUTH_TOKEN=${QRD_AUTH_TOKEN}
